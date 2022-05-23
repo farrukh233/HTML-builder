@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-console.log("Please type in your text");
+console.log("Введите текст:");
 
 const output = fs.createWriteStream(path.join(__dirname, "txt.txt"));
 process.stdin.on("data", data => {
