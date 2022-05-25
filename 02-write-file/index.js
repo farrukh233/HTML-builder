@@ -9,3 +9,4 @@ process.stdin.on("data", data => {
   output.write(data.toString());
 });
 process.on("SIGINT", () => process.exit());
+process.on("exit", () => console.log("Пока!"));
